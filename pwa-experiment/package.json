@@ -15,3 +15,10 @@
     "eject": "react-scripts eject"
   }
 }
+```js
+{
+  // ...
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

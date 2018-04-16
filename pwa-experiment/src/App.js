@@ -21,6 +21,9 @@ const Page = ({ title }) => (
     <p>
     <Link to="/settings">Settings</Link>
     </p>
+    <p>
+    <Link to="/skusanie">skusanie</Link>
+    </p>
     </div>
 );
 
@@ -35,6 +38,9 @@ const About = (props) => (
 const Settings = (props) => (
     <Page title="Settings"/>
 );
+const skusanie = (props) => (
+    <Page title="skusanie"/>
+);
 
 class App extends Component {
     render() {
@@ -43,6 +49,7 @@ class App extends Component {
             <Route path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/settings" component={Settings}/>
+        <Route path="/skusanie" component={skusanie}/>
         </Router>
     );
     }
